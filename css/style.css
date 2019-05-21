@@ -243,7 +243,7 @@ header.scrolling {
 
 
 .nav-collapse a {
-  font-size: 14px;
+  font-size: 16px;
   display: block;
   height: 50px;
   line-height: 50px;
@@ -252,7 +252,7 @@ header.scrolling {
   text-transform: uppercase;
   background: #040404;
   border-top: 1px solid #424242;
-  color: #8c8c8c;
+  color: #ababab;
 }
 
 .nav-collapse a:hover {
@@ -471,7 +471,6 @@ Slider navigation
   z-index: 2;
   text-align: center;
   height: 40px;
-  /*background-color: rgba(0, 1, 1, 0.5);*/
 }
 .cd-slider-nav nav, .cd-slider-nav ul, .cd-slider-nav li, .cd-slider-nav a {
   height: 100%;
@@ -529,7 +528,6 @@ Slider navigation
 .cd-slider-nav a {
   display: block;
   position: relative;
-  /*color: #a8b4be;*/
   -webkit-transition: background-color 0.2s;
   -moz-transition: background-color 0.2s;
   transition: background-color 0.2s;
@@ -772,9 +770,8 @@ strong {
 }
 
 .bio-block p span{
-  font-size: 28px;
-  font-weight: 400;
-
+  font-size: 22px;
+color: black;
 }
 
 .bio-block ul {
@@ -796,6 +793,7 @@ list-style-image: url('../images/list.png');
     overflow: hidden;
     float: left;
   	height: 600px;
+   bottom: -20px;
   	/*background-image: url(../images/biografia.jpg);*/
 
 }
@@ -808,6 +806,33 @@ list-style-image: url('../images/list.png');
 .bio-block ul{
   padding: 5%
 }
+
+/* logos */
+.universidades{
+  overflow: hidden; /* just clearing floats */
+  width: 50%;
+  display:block;
+  margin: auto;
+  float:right;
+  padding-bottom: 2%;
+}
+
+.logo-uni{
+    display:block;
+    position: relative;
+    overflow: hidden;
+    width:20%;
+    float:left;
+    padding-right: 2%;
+
+}
+
+.logo-empresa:before{
+    content: "";
+    display: block;
+}
+
+
 
 /*--------- El libro fixed bg ---------
 -------------------------------------*/
@@ -1063,7 +1088,7 @@ Contact form
 	border: 3px solid #3563b5;
 	color: #424242;
 	outline: none;
-  padding: 10px 10px 10px 54px;;
+  padding: 8px 10px 8px 54px;
 }
 
 .focused{
@@ -1075,43 +1100,42 @@ Contact form
 #name{
 	background-image: url(../images/name-icon.svg);
 	background-size: 30px 30px;
-	background-position: 11px 6px;
+	background-position: 11px 4px;
 	background-repeat: no-repeat;
 }
 
 #name:focus{
 	background-image: url(../images/name-icon.svg);
 	background-size: 30px 30px;
-	background-position: 8px 5px;
-  background-position: 11px 6px;
+  background-position: 11px 4px;
 	background-repeat: no-repeat;
 }
 
 #email{
 	background-image: url(../images/email-icon.svg);
 	background-size: 30px 30px;
-	background-position: 11px 6px;
+	background-position: 11px 4px;
 	background-repeat: no-repeat;
 }
 
 #email:focus{
 	background-image: url(../images/email-icon.svg);
 	background-size: 30px 30px;
-  background-position: 11px 6px;
+  background-position: 11px 4px;
 	background-repeat: no-repeat;
 }
 
 #contact{
   background-image: url(../images/phone-icon.png);
   background-size: 30px 30px;
-  background-position: 11px 6px;
+  background-position: 11px 4px;
   background-repeat: no-repeat;
 }
 
 #contact:focus{
   background-image: url(../images/phone-icon.png);
   background-size: 30px 30px;
-  background-position: 11px 6px;
+  background-position: 11px 4px;
   background-repeat: no-repeat;
 }
 

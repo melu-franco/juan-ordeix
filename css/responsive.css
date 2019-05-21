@@ -81,7 +81,7 @@
   /*height: 350px;*/
   /*background-position: 80% 50%;*/
   background-attachment: scroll;
-  background-image: url("../images/IMG_8873-phone.JPG");
+  background-image: url("../images/IMG_8873-phone.jpg");
 }
 
 .module.parallax-4 {
@@ -99,14 +99,17 @@
 
 }
 
-
+footer{
+  font-size: 12px;
+  text-align: center;
 }
 
 
+}
 
-@media all and (max-width: 340px){
-  #libro .square-container{height: 840px;}
-    .texto-libro p { padding-bottom: 1%; font-size: 16px; line-height: 22px;}
+@media all and (min-width: 320px) and (max-width:533px){
+  #libro .square-container{height: 880px;}
+  .texto-libro p { padding-bottom: 1%; font-size: 16px; line-height: 22px;}
 
 }
 
@@ -120,8 +123,10 @@
   #libro .square-container{height: 700px;}
 }
 
-@media all and (max-width: 310px){
-    #libro .square-container{height: 900px;}
+@media all and (max-width: 310px) {
+    #libro .square-container{height: 980px;}
+    .texto-libro p { padding-bottom: 1%; font-size: 16px; line-height: 22px;}
+
 
 }
 @media all and (min-width: 500px){
@@ -292,7 +297,7 @@
     background: transparent;
     padding: 22px 32px 0 0;
     border-top: none;
-    color: #8c8c8c;
+    color: #ddd;
     letter-spacing: .1rem;
     text-transform: uppercase;
     font-size: 1.3rem;
@@ -850,4 +855,10 @@ Single slide animation
     .bio-block{
       width: 100%
     }
+
+    .universidades{
+        display: none;
+    }
+
+
 }
