@@ -1,0 +1,585 @@
+
+/*-------- CONTAINER ---------
+----------------------------*/
+
+@media only screen and (min-width: 1280px){
+ .container {
+    width: 80%;
+  }
+}
+
+
+@media only screen and (min-width: 801px) {
+  .container {
+    width: 90%;
+  }
+  .container-text {
+    width: 80%;
+  }
+  .logo {
+    margin: 16px 0 0;
+  }
+
+
+@media only screen and (max-width: 800px) {
+ .container {
+    width: 90%;
+  }
+  .container-text {
+    width: 80%;
+  }
+   .logo {
+    margin: 16px 0 0;
+  }
+}
+
+/*---------- MENU -----------
+----------------------------*/
+
+@media only screen and (min-width: 52em) { /* 832px */
+  header {
+    height: 60px;
+  }
+  .logo {
+    margin: 18px 0 0;
+  }
+}
+
+@media screen and (min-width: 52em) { /* 832px */
+  .js .nav-collapse {
+    position: relative;
+  }
+  .js .nav-collapse.closed {
+    max-height: none;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .mask {
+    display: none !important;
+    opacity: 0 !important;
+  }
+  .nav-collapse {
+    float: right;
+    width: auto;
+  }
+  .nav-collapse li {
+    float: left;
+    width: 100%;
+  }
+  .nav-collapse li {
+    width: auto;
+  }
+  .nav-collapse a {
+    display: inline-block;
+    height: auto;
+    line-height: normal;
+    background: transparent;
+    padding: 23px 32px 0 0;
+    border-top: none;
+    color: #f3f3f3 ;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .nav-collapse a:hover {
+    text-decoration: underline;
+   }
+  .nav-collapse a.last-menu {
+    padding: 10px;
+    margin: 11px 0 0;
+    color: #ff4229;
+    border: 2px solid #ff4229;
+    box-shadow: inset 0 0 0 0 #ff4229;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+  }
+  .nav-collapse a.last-menu:hover {
+      box-shadow: inset 130px 0 0 0 #ff4229;
+      color: #FFF;
+      text-decoration: none;
+  }
+  .nav-collapse ul ul a {
+    display: none;
+  }
+}
+
+
+
+/*------- HERO SLIDER ---------
+------------------------------*/
+
+@media only screen and (min-width: 768px) {
+  .cd-hero-slider {
+    height: 650px;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .cd-hero-slider {
+    height: 700px;
+  }
+}
+
+@media only screen and (min-width: 1270px) {
+  .cd-hero-slider {
+    height: 680px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+	 .cd-hero-slider li:nth-of-type(1) {
+    background-image: url(../images/prueba1_2.jpg);
+  }
+  .cd-hero-slider li:nth-of-type(2) {
+    background-image: url(../images/UP_Club_Interior_004.jpg);
+  }
+  .cd-hero-slider li:nth-of-type(3) {
+    background-image: url(../images/pto_madero_noche_home_nueva_0.png);
+  }
+  .cd-hero-slider .cd-full-width,
+  .cd-hero-slider .cd-half-width {
+    padding-top: 250px;
+  }
+  .cd-hero-slider .cd-bg-video-wrapper {
+    display: block;
+  }
+  .cd-hero-slider .cd-half-width {
+    width: 45%;
+  }
+  .cd-hero-slider .cd-half-width:first-of-type {
+    left: 5%;
+  }
+  .cd-hero-slider .cd-half-width:nth-of-type(2) {
+    right: 5%;
+    left: auto;
+  }
+  .cd-hero-slider .cd-img-container {
+    display: block;
+  }
+  .cd-hero-slider h2, .cd-hero-slider p {
+    max-width: 520px;
+  }
+  .cd-hero-slider h2 {
+    font-size: 2.4em;
+    font-weight: 300;
+  }
+  .cd-hero-slider .cd-btn {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .cd-hero-slider .cd-full-width,
+  .cd-hero-slider .cd-half-width {
+    padding-top: 250px;
+  }
+  .cd-hero-slider h2, .cd-hero-slider p {
+    margin-bottom: 12px;
+  }
+  .cd-hero-slider h2 {
+    font-size: 3.2em;
+  }
+  .cd-hero-slider p {
+    font-size: 1.6rem;
+  }
+}
+
+/* --------------------------------
+
+Single slide animation
+
+-------------------------------- */
+@media only screen and (min-width: 768px) {
+  .cd-hero-slider .cd-half-width {
+    opacity: 0;
+    -webkit-transform: translateX(40px);
+    -moz-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    -o-transform: translateX(40px);
+    transform: translateX(40px);
+  }
+  .cd-hero-slider .move-left .cd-half-width {
+    -webkit-transform: translateX(-40px);
+    -moz-transform: translateX(-40px);
+    -ms-transform: translateX(-40px);
+    -o-transform: translateX(-40px);
+    transform: translateX(-40px);
+  }
+  .cd-hero-slider .selected .cd-half-width {
+    /* this is the visible slide */
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+  .cd-hero-slider .is-moving .cd-half-width {
+    /* this is the slide moving outside the viewport
+    wait for the end of the transition on the <li> parent before set opacity to 0 and translate to 40px/-40px */
+    -webkit-transition: opacity 0s 0.5s, -webkit-transform 0s 0.5s;
+    -moz-transition: opacity 0s 0.5s, -moz-transform 0s 0.5s;
+    transition: opacity 0s 0.5s, transform 0s 0.5s;
+  }
+  .cd-hero-slider li.selected.from-left .cd-half-width:nth-of-type(2),
+  .cd-hero-slider li.selected.from-right .cd-half-width:first-of-type {
+    /* this is the selected slide - different animation if it's entering from left or right */
+    -webkit-transition: opacity 0.4s 0.2s, -webkit-transform 0.5s 0.2s;
+    -moz-transition: opacity 0.4s 0.2s, -moz-transform 0.5s 0.2s;
+    transition: opacity 0.4s 0.2s, transform 0.5s 0.2s;
+  }
+  .cd-hero-slider li.selected.from-left .cd-half-width:first-of-type,
+  .cd-hero-slider li.selected.from-right .cd-half-width:nth-of-type(2) {
+    /* this is the selected slide - different animation if it's entering from left or right */
+    -webkit-transition: opacity 0.4s 0.4s, -webkit-transform 0.5s 0.4s;
+    -moz-transition: opacity 0.4s 0.4s, -moz-transform 0.5s 0.4s;
+    transition: opacity 0.4s 0.4s, transform 0.5s 0.4s;
+  }
+  .cd-hero-slider .cd-full-width h2,
+  .cd-hero-slider .cd-full-width p,
+  .cd-hero-slider .cd-full-width .cd-btn {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+    -moz-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    -o-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+  .cd-hero-slider .move-left .cd-full-width h2,
+  .cd-hero-slider .move-left .cd-full-width p,
+  .cd-hero-slider .move-left .cd-full-width .cd-btn {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+  .cd-hero-slider .selected .cd-full-width h2,
+  .cd-hero-slider .selected .cd-full-width p,
+  .cd-hero-slider .selected .cd-full-width .cd-btn {
+    /* this is the visible slide */
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+  .cd-hero-slider li.is-moving .cd-full-width h2,
+  .cd-hero-slider li.is-moving .cd-full-width p,
+  .cd-hero-slider li.is-moving .cd-full-width .cd-btn {
+    /* this is the slide moving outside the viewport
+    wait for the end of the transition on the li parent before set opacity to 0 and translate to 100px/-100px */
+    -webkit-transition: opacity 0s 0.5s, -webkit-transform 0s 0.5s;
+    -moz-transition: opacity 0s 0.5s, -moz-transform 0s 0.5s;
+    transition: opacity 0s 0.5s, transform 0s 0.5s;
+  }
+  .cd-hero-slider li.selected h2 {
+    -webkit-transition: opacity 0.4s 0.2s, -webkit-transform 0.5s 0.2s;
+    -moz-transition: opacity 0.4s 0.2s, -moz-transform 0.5s 0.2s;
+    transition: opacity 0.4s 0.2s, transform 0.5s 0.2s;
+  }
+  .cd-hero-slider li.selected p {
+    -webkit-transition: opacity 0.4s 0.3s, -webkit-transform 0.5s 0.3s;
+    -moz-transition: opacity 0.4s 0.3s, -moz-transform 0.5s 0.3s;
+    transition: opacity 0.4s 0.3s, transform 0.5s 0.3s;
+  }
+  .cd-hero-slider li.selected .cd-btn {
+    -webkit-transition: opacity 0.4s 0.4s, -webkit-transform 0.5s 0.4s, background-color 0.2s 0s;
+    -moz-transition: opacity 0.4s 0.4s, -moz-transform 0.5s 0.4s, background-color 0.2s 0s;
+    transition: opacity 0.4s 0.4s, transform 0.5s 0.4s, background-color 0.2s 0s;
+  }
+}
+
+/*----- Slider Nav -----*/
+
+@media only screen and (min-width: 768px) {
+  .cd-slider-nav {
+    height: 50px;
+  }
+  .cd-slider-nav .cd-marker,
+  .cd-slider-nav li {
+    width: 40px;
+  }
+  .cd-slider-nav a {
+    padding-top: 48px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+  }
+  .cd-slider-nav a::before {
+    top: 18px;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .cd-main-content {
+    padding: 3em 0;
+  }
+  .cd-main-content p {
+    font-size: 1.6rem;
+  }
+}
+
+
+/*------- BLOQUES ---------
+------------------------------*/
+
+
+@media (min-width: 700px) {
+
+  .featured-section-content .br {
+    display: block;
+    color: white;
+}
+
+.featured-section-content {
+    font-size: 2em;
+}
+
+.featured-section-content {
+    color: #fff;
+    margin: 0 auto;
+    font-size: 1.8em;
+    line-height: 1.5em;
+    max-width: 900px;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+}
+
+.featured-section {
+    /*padding: 102px 0;*/
+}
+.featured-section {
+    background-color: #1c1c1e;
+    color: #fff;
+    padding: 80px 0;
+}
+
+}
+
+@media screen and ( max-width: 1360px ) {
+  .square-content.text {
+  	padding: 8% ;
+  }
+  .square-content p {
+    display: block;
+    vertical-align: middle;
+    padding: 2%;
+  	line-height: 37px;
+  	font-size: 20px;
+  	font-weight: 200
+  }
+}
+
+
+@media screen and ( max-width: 80em ) { /* 1264px */
+	.square-content p {
+    display: block;
+    vertical-align: middle;
+    padding: 2%;
+  	line-height: 18px;
+  	font-size: 16px;
+  }
+  #bio .square-content.text {
+  	padding-left: 5%;
+  	padding-right: 5%;
+  }
+}
+
+@media screen and ( max-width: 70em ) { /* 1120px */
+  .square-box{
+    width: 50%;
+    overflow: hidden;
+    background: #fff;
+	  float:left;
+  }
+  .square-box-width{
+  	height: 350px;
+  }
+  .right-box p{
+    vertical-align: middle;
+  	line-height: 26px;
+  	font-size: 20px;
+  	padding-bottom: 5%;
+  }
+  .descripcion h3 {
+  	font-size: 18px;
+  }
+  .foto-block{
+  	padding-top: 5%;
+  }
+}
+
+@media screen and ( max-width: 57em ) { /* 912px */
+  .right-box {
+    width: 100%;
+    overflow: hidden;
+  }
+	.square-content p {
+    padding: 2%;
+  	line-height: 20px;
+  	font-size: 18px;
+  }
+  .square-box-width{
+  	height: 300px;
+  }
+  .foto-block{
+  	width: 100%;
+  	background-image: url(../images/bio.png) no-repeat center;
+  }
+  .bio-block{
+  	width: 100%
+  }
+}
+
+@media screen and ( max-width: 50em ) { /* 912px */
+	.square-content p {
+   	padding: 1%;
+  	line-height: 18px;
+  	font-size: 16px;
+  }
+}
+
+@media screen and ( max-width: 46em ) { /* 640px */
+	.square-box-2:before{
+      padding-top: 120%;
+  }
+  #bio .square-content p {
+  	padding: 1%;
+  	line-height: 20px;
+  	font-size: 17px;
+  }
+    .square-box{
+      width: 100%;
+      overflow: hidden;
+      background: #fff;
+  	 float:left;
+  }
+  .square-box-2:before{
+      padding-top: 100%;
+  }
+  .square-content p {
+    padding: 1%;
+  	line-height: 24px;
+  	font-size: 18px;
+  }
+  .descripcion p{
+  	font-size:16px;
+  }
+  .descripcion h3{
+  	font-size:15px;
+  }
+  .square-box-width{
+  	height: 200px;
+  }
+  .foto-block{
+  	background-image: url(../images/bio.png) no-repeat center;
+  	width: 100%;
+  	height: 172px;
+  }
+
+.logo-empresa{
+    width: 33.3333%;
+    overflow: hidden;
+    background: #fff;
+    float:left;
+  }
+
+}
+
+
+@media screen and ( max-width: 46em ) { /* 640px */
+  .square-content p {
+    padding: 1%;
+  	line-height: 20px;
+  	font-size: 15px;
+  }
+  .square-box-2:before{
+      padding-top: 180%;
+  }
+  .descripcion p{
+  	font-size:12px;
+  	padding-bottom: 5%;
+  }
+  .shows-logos .descripcion h3{
+  	font-size:16px;
+  }
+  .shows-logos {
+    position: relative;
+    height: 100px;
+    background-color:#1c1d21;
+  }
+}
+
+@media screen and ( max-width: 800px ) {
+  .square-box-width{
+  	height: 280px;
+  }
+}
+
+
+@media screen and ( max-width: 23em ) { /* 368px */
+  .square-box:before{
+      content: "";
+      display: block;
+      padding-top: 65%;
+  }
+  .square-content.text {
+    padding: 5%;
+  }
+  .square-box-width{
+    height: 120px;
+  }
+}
+
+
+
+/*------- CONTACTO  ---------
+------------------------------*/
+
+@media only screen and (min-width: 768px) {
+  .cd-fixed-bg h1, .cd-fixed-bg h2 {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .cd-fixed-bg {
+    background-attachment: fixed;
+	  background-color: rgba(0, 0, 0, 0.9);
+  }
+  .cd-fixed-bg2 {
+    background-attachment: fixed;
+	  background-color: rgba(0, 0, 0, 0.9);
+  }
+  .cd-fixed-bg h1, .cd-fixed-bg h2 {
+    font-size: 35px;
+    font-weight: 300;
+    letter-spacing: 5px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .square-box-width{
+  	 height: 150px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+	#form-div{
+		left: 6%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+	.square-box-width{
+	 height: 200px;
+  }
+}
+
+
